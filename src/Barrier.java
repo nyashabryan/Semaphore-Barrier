@@ -15,6 +15,7 @@ public class Barrier {
 	
 	public void b_wait() throws InterruptedException{
 		// this is the only additional method you will need to complete
+		count++;
 		if(count== n){
 			barrierSem.release();
 		}

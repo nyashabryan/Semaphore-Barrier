@@ -37,5 +37,8 @@ run:
 	@java -cp $(BINDIR) $(BARRIERPACKAGE).BarrierTest 8 12
 
 clean:
-	@rm -f $(BINDIR)/*.class
+	@rm -f $(BINDIR)/*
 	@rm -f doc/*
+
+tar:
+	@tar -zcvf KTMNYA001_CSC3002S_OS2_PartI.tar.gz bin/ src/ .gitignore makefile README.md .git/
