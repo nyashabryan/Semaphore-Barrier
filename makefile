@@ -34,7 +34,7 @@ test: testclasses
 	java -ea -cp $(BINDIR):$(JUNIT) org.junit.runner.JUnitCore JunitTestSuite
 
 run: 
-	@java -cp $(BINDIR) $(BARRIERPACKAGE).BarrierTest
+	@java -cp $(BINDIR) $(BARRIERPACKAGE).BarrierTest 8 12
 
 clean:
 	@rm -f $(BINDIR)/*.class
